@@ -5,8 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0
+      }
+      html, body {
+        height: 100%
+      }
+      body {
+        display: flex;
+        align-Items: center;
+        justify-content: center;
+        background-color: #212630;
+        color: #b4bbc6;
+      }
+      #terminal {
+        border: 1.5px solid;
+        padding: 1rem;
+        border-radius: .3rem;
+        height: 42px;
+      }
+      pre {
+        font-family: 'Fira Code', monospace;
+      }
+    </style>
   </head>
   <body>
-    <pre>cd ~</pre>
+    <div id='terminal'>
+      <pre>> cd ~</pre>
+      <pre>It is ok, you are home now!</pre>
+    </div>
   </body>
 </html>
