@@ -16,12 +16,15 @@
       html, body {
         height: 100%
       }
-      body {
-        display: flex;
-        align-Items: center;
-        justify-content: center;
+      body{
+        padding: 2rem;
         background-color: #212630;
+        font-family: 'Fira Code', monospace;
+      }
+      main {
         color: #b4bbc6;
+        max-width: 80ch;
+        margin: auto;
       }
       #terminal {
         border: 1.5px solid;
@@ -29,15 +32,62 @@
         border-radius: .3rem;
         height: 42px;
       }
-      pre {
-        font-family: 'Fira Code', monospace;
+      a {
+        color: #61afef;
+      }
+      article h1 {
+        font-weight: normal;
+        font-size: 1rem;
+      }
+      ul {
+        padding-left: 1rem;
+      }
+      li {
+        list-style: none;
+      }
+      .docstring {
+        color: #4b5263;
+      }
+      .comment {
+        color: #777d86;
+      }
+      .symbol {
+        color: #c678dd;
+        font-size: 1rem;
+      }
+      .mod {
+        color: #e06c75
       }
     </style>
   </head>
   <body>
-    <div id='terminal'>
-      <pre>> cd ~</pre>
-      <pre>It is ok, you are home now!</pre>
-    </div>
+    <main>
+      <article>
+        <h1><span class="symbol">mod </span><span class="mod">about</span><span> {</span></h1>
+        <ul>
+          <li>
+            <p class="docstring">/// Github</p>
+            <p><span class="symbol">pub fn</span> <a href="https://github.com/nuhvi" target="_blank">github()</a> {}</p>
+          </li>
+        </ul>
+        <span>}</span>
+      </article>
+      <br/>
+      <article>
+        <h1><span class="symbol">mod </span><span class="mod">projects</span><span> {</span></h1>
+        <ul>
+          <li>
+            <p class="docstring">/// Public Key Addressable Resource Records (sovereign TLDs)</p>
+            <p><span class="symbol">pub fn</span> <a href="https://pkarr.org" target="_blank">pkarr()</a> {}</p>
+          </li>
+          <br/>
+          <li>
+            <p class="docstring">/// Simple, robust, BitTorrent's Mainline DHT implementation</p>
+            <p><span class="symbol">pub fn</span> <a href="https://github.com/nuhvi/mainline-rs" target="_blank">mainline()</a> {}</p>
+          </li>
+        </ul>
+        <span>}</span>
+      </article>
+    </main>
   </body>
 </html>
